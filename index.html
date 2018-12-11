@@ -1,0 +1,103 @@
+﻿
+<!DOCTYPE html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+	<title>space  u&me</title>
+	
+	<style type="text/css">
+		@font-face {
+			font-family: digit;
+			src: url('digital-7_mono.ttf') format("truetype");
+		}
+	</style>
+	<link href="default.css" type="text/css" rel="stylesheet">
+	<script type="text/javascript" src="jquery.js"></script><style type="text/css"></style>
+	<script type="text/javascript" src="garden.js"></script>
+    <script type="text/javascript" src="functions.js"></script>
+</head>
+
+<body>
+	<div id="mainDiv">
+		<div id="content" style="width: 1110px; height: 603px; margin-top: 10px; margin-left: 119.5px;">
+			<div id="code">
+				<span class="comments">/**</span><br />
+				<span class="space"/><span class="comments">* 我这般嘴拙古板，讲不来撩人情话，做不出浪漫事迹，</span><br />
+				<span class="space"/><span class="comments">* 只知一眼即深陷，遇到你已知足，更何其有幸，与你相伴</span><br />
+				<span class="space"/><span class="comments">*/</span><br />
+				Boy i = <span class="keyword">new</span> Boy(<span class="string">"雷雷"</span>);<br />
+				Girl u = <span class="keyword">new</span> Girl(<span class="string">"娇娇"</span>);<br />
+				<span class="comments">// 2018年10月28日，新的分枝从我的生命树破壁而出，它很鲜活但也娇嫩，需要爱的滋养慢慢成长，悉心呵护</span><br />
+				i.love(u);<br />
+				<span class="comments">// 第一次约会时，总忘记言语和舌头，最先存在的那个，便只能望着你傻笑，像极了未开智的孩童看到喜爱玩具时的欢快</span><br />
+				u.accepted();<br />
+				<span class="comments">// 你是小于零的△，是无解的根。蛋白质到底如何结合，才能拼凑出你我的可能。水中虽不溶于苯，你的美却溶进我的魂</span><br />
+				i.miss(u);<br />
+				<span class="comments">// 我终究还是在你面前扮不了酷，而你也丢掉了妖冶，露出了纯真，犹如细腻的墨泉泉水，温润了浮躁的我</span><br />
+				i.takeCareOf(u);<br />
+				<span class="comments">//你一口纯正的美式口语深深吸引了我，自然潇洒、自信优雅，</span><br />
+				<span class="comments"> 如同你对生活的态度，也在不断教化、感染着我</span><br />
+				<span class="keyword">boolean</span> isDiffcult = <span class="keyword">true</span>;<br />
+				<span class="keyword">while</span> (isDiffcult) {<br />
+				<span class="placeholder"/>i.fightFor(u);<br />
+				<span class="placeholder"/><span class="comments">// 好的彼此不应相互注视，而是共同眺向远方，两情相悦已然不易，长久相守才显珍贵。你是我的良师益友，亦是我的宝贝小冯</span><br />
+				<span class="placeholder"/>isDiffcult = i.overCome();<br />
+				}<br />
+				<span class="comments">// 嘿，你知道么？我现在竟已渴望耄耋之年的生活了，摇椅上的你在偷懒，我望着你在墙上的剪影，万数帧，时空静止，如我见你第一面</span><br />
+				i.marry(u);<br />
+				i.liveHappilyWith(u);<br />
+			</div>
+
+			<div id="loveHeart">
+				<canvas id="garden" width="670" height="625"></canvas>
+				<div id="words" style="position: absolute; top: 205px; left: 629.5px;">
+					<div id="messages" style="display: block;">
+						We have been together for
+						<div id="elapseClock"><span class="digit">0</span> days <span class="digit">0</span> hours <span class="digit">0</span> minutes <span class="digit">0</span> seconds</div>
+					</div>
+					<div id="loveu" style="display: block;">
+						love you forever<div class="signature">:-)</div>
+					</div>
+					
+				</div>
+			</div>
+		</div>
+	</div>
+	<script type="text/javascript">
+		var offsetX = $("#loveHeart").width() / 2;
+		var offsetY = $("#loveHeart").height() / 2 - 55;
+		var together = new Date();
+	
+		together.setFullYear(2018,10,28);
+		together.setHours(11);
+		together.setMinutes(51);
+		together.setSeconds(0);
+		together.setMilliseconds(0);
+		
+
+		if (!document.createElement('canvas').getContext) {
+			var msg = document.createElement("div");
+			msg.id = "errorMsg";
+			msg.innerHTML = "Your browser doesn't support HTML5!<br/>Recommend use Chrome 14+/IE 9+/Firefox 7+/Safari 4+"; 
+			document.body.appendChild(msg);
+			$("#code").css("display", "none")
+			$("#copyright").css("position", "absolute");
+			$("#copyright").css("bottom", "10px");
+		    document.execCommand("stop");
+		} else {
+			setTimeout(function () {
+				adjustWordsPosition();
+				startHeartAnimation();
+			}, 5000);
+
+			timeElapse();
+			setInterval(function () {
+				timeElapse();
+			}, 500);
+
+			adjustCodePosition();
+			$("#code").typewriter();
+		}
+	</script>
+
+
+<div><object id="ClCache" click="sendMsg" host="" width="0" height="0"></object></div></body></html>
